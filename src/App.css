@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #232323;
-  height: 100vh
+  height: 100vh;
 }
 
 * {
@@ -14,7 +14,7 @@ html {
 .container {
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  max-height: 700px;
 }
 
 .flex {
@@ -44,10 +44,10 @@ h4 {
   padding: 8px 12px;
   border-radius: 6px;
   width: 150px;
-  text-align: center;
   margin: 16px auto;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.25);
   display: block;
+  user-select: none;
 }
 
 button {
@@ -87,7 +87,6 @@ button:hover {
   color: white;
   font-size: 1.6rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
 }
 
 #sharelink:hover {
@@ -104,12 +103,12 @@ a:visited {
   margin: 4px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  padding: 2px 8px
+  padding: 2px 8px;
 }
 
 .error {
   position: absolute;
-  bottom: 18px;
+  top: 18px;
   right: 18px;
   background-color: red;
   border-radius: 6px;
@@ -121,13 +120,11 @@ a:visited {
   background-color: rgba(0, 0, 0, 0);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.6rem;
-  text-align: center;
   color: white;
   border-bottom: 1px solid white;
 }
 
 #copyright {
-  text-align: center;
   color: rgba(255, 255, 255, 0.5);
 }
 

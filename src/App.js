@@ -99,7 +99,7 @@ function App() {
     }
 
     function LoggedIn(props) {
-      const shareLink = "https://pwncount.web.app/display/" + user;
+      const shareLink = window.location.host + "/display/" + user;
       const initialHint = "";
       const [hint, setHint] = useState(initialHint);
       const [textField, setTextField] = useState(props.text);
@@ -165,7 +165,7 @@ function App() {
           </div>
           <div>
             <h4>This is your view-Link:</h4>
-            <div id="url">{shareLink.slice(8, 999)}</div>
+            <div id="url">{shareLink}</div>
             <button
               id="sharelink"
               value={shareLink}
