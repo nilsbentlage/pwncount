@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: orange;
+  background-color: #232323;
   height: 100vh
 }
 
@@ -40,7 +40,7 @@ h4 {
   font-size: 6rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: white;
-  color: black;
+  color: #232323;
   padding: 8px 12px;
   border-radius: 6px;
   width: 150px;
