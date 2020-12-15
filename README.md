@@ -1,7 +1,7 @@
 # This is PWNCount
 ## A small PWA to count whatever you like
 
-nsisting of **create-react-app, firebase auth, database & hosting**, PWNCount manages to serve multiple Instances of a smallest-as-possible front- and backend for a simple counter. One for every signedin user.
+Consisting of **create-react-app, firebase auth, database & hosting**, PWNCount manages to serve multiple Instances of a smallest-as-possible front- and backend for a simple counter. One for every signedin user.
 
 You can create your own counter in my instance [pwncount.web.app](pwncount.web.app) or host your own instance via google firebase. Just pull this project, connect it to firebase, ativate database & auth and you're ready to go. 
 
