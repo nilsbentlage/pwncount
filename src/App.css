@@ -1,38 +1,138 @@
-.App {
+html {
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  height: 100vh
+}
+
+* {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+#output {
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 150px;
+  text-align: center;
+  margin: 16px auto;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+
+button {
+  margin: 10px 0;
+  font-size: 1rem;
+  padding: 10px 14px;
+  background-color: white;
+  border: none;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.inputform {
+  font-size: 1rem;
+  padding: 6px;
+  margin: 12px;
+}
+
+#reset {
+  background-color: red;
+  border-radius: 0px 6px 6px 0px;
+  color: white;
+  width: 50px;
+}
+
+#pwned {
+  border-radius: 6px 0px 0px 6px;
+  width: 125px;
+}
+
+.text {
+  color: white;
+  font-size: 1.6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+
+#sharelink:hover {
+  cursor: pointer;
+}
+
+a,
+a:visited {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#hint {
+  font-size: 0.8rem;
+  margin: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 2px 8px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background-color: red;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+#customText {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+#copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#url {
+  font-size: 0.8rem;
+  max-width: 80vw;
+  word-wrap: break-word;
 }
