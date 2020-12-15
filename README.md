@@ -5,7 +5,7 @@ Consisting of **create-react-app, firebase auth, database & hosting**, PWNCount 
 
 You can create your own counter in my instance [pwncount.web.app](pwncount.web.app) or host your own instance via google firebase. Just pull this project, connect it to firebase, ativate database & auth and you're ready to go. 
 
-### You just need to add the firebase .env-configuration-file and manually change the Link that's created in the LoggedIn()-function.
+#### You just need to add the firebase .env-configuration-file
 
 ## WTF ist this sh**?
 
