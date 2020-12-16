@@ -111,10 +111,14 @@ function App() {
         db.ref("/counter/" + user + "/count").set(value);
       }
 
+      function applyTitle() {
+        db.ref("/counter/" + user + "/customText").set(textField);
+      }
+
       function resetCounter() {
         db.ref("/counter/" + user + "/count").set(0);
         setCounter(0);
-        db.ref("/counter/" + user + "/customText").set(textField);
+        applyTitle();
       }
 
       function toClipboard(newClip) {
