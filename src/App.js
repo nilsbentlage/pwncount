@@ -16,20 +16,15 @@ function App() {
   const [customText, setCustomText] = useState("- loading -");
 
   useEffect(() => {
-    db.ref("/counter/" + user + "/customText").on("value", (snapshot) => {
+    db.ref("/counter/" + user).on("value", (snapshot) => {
       if (snapshot.val()) {
-        setCustomText(snapshot.val());
+        setCustomText(snapshot.val().customText);
+        setCounter(snapshot.val().count);
       } else {
         setCustomText("I have been pwned");
       }
     });
   });
-
-  useEffect(() =>
-    db.ref("/counter/" + user + "/count").once("value", (snapshot) => {
-      setCounter(snapshot.val() || 0);
-    })
-  );
 
   function Backend() {
     firebase.auth().onAuthStateChanged(function (user) {
